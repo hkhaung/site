@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-main: "Roboto Flex", sans-serif;
+  --animate-fadeup: fadeup 1s ease-out;
+  @keyframes fadeup {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(1.5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+}
+
+:root {
+  font-family: var(--font-main);
+}
